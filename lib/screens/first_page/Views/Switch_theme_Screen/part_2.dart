@@ -17,9 +17,9 @@ class _switch_theme_2State extends State<switch_theme_2> {
 
     return Scaffold(
       appBar: AppBar(
-        backgroundColor: isdark ? Theme.of(context).secondaryHeaderColor : Theme.of(context).primaryColor,
+        backgroundColor: isdark ? Colors.black12 : Colors.blue,
         centerTitle: true,
-        title: Text("Switch theme"),
+        title: Text("Switch Theme"),
         leading: Icon(Icons.menu),
         toolbarHeight: 70,
       ),
@@ -28,12 +28,8 @@ class _switch_theme_2State extends State<switch_theme_2> {
         children: [
 
           Text('YO Man!',style: Theme.of(context).textTheme.labelLarge,),
-          Text(" It's simple example of",style: Theme.of(context).textTheme.titleMedium,),
-          Text('dark theme',style: Theme.of(context).textTheme.titleMedium,),
-
-          // Text('YO Man!',style: TextStyle(fontSize: 50,fontWeight: FontWeight.w700)),
-          // Text(" It's simple example of",style: TextStyle(fontSize: 30)),
-          // Text('dark theme',style: TextStyle(fontSize: 30)),
+          Text(" It's simple example of",style: Theme.of(context).textTheme.labelMedium,),
+          Text('dark theme',style: Theme.of(context).textTheme.labelMedium,),
 
           SizedBox(height: height*0.1,),
 
@@ -54,8 +50,8 @@ class _switch_theme_2State extends State<switch_theme_2> {
                   borderRadius: BorderRadius.circular(20)),
               alignment: Alignment.center,
               child:  Text(
-                'Switch light theme',
-                style: TextStyle(fontSize: 25),
+                'Light theme',
+                style: Theme.of(context).textTheme.titleLarge
               ),
             ),
           // ),
@@ -76,8 +72,8 @@ class _switch_theme_2State extends State<switch_theme_2> {
                   borderRadius: BorderRadius.circular(20)),
               alignment: Alignment.center,
               child: Text(
-                'Switch dark theme',
-                style: TextStyle(fontSize: 25),
+                'Dark theme',
+                style: Theme.of(context).textTheme.titleMedium
               ),
             ),
           // ),

@@ -18,12 +18,21 @@ class Switch_Theme extends StatelessWidget {
           textTheme: TextTheme(
             labelLarge: TextStyle(
               fontSize: 50,
+              color: Colors.black
             ),
-           titleMedium: TextStyle(
-             fontSize: 30
-           )
+           labelMedium: TextStyle(
+             fontSize: 30,
+             color: Colors.black
+           ),
+              titleLarge: TextStyle(
+                  fontSize: 28
+              ),
+            titleMedium: TextStyle(
+              fontSize: 22
+            )
           )
         ),
+
         darkTheme: ThemeData.dark().copyWith(
           primaryColor: Colors.teal,
           secondaryHeaderColor: Colors.grey,
@@ -31,9 +40,15 @@ class Switch_Theme extends StatelessWidget {
                 labelLarge: TextStyle(
                   fontSize: 50,
                 ),
-                titleMedium: TextStyle(
+                labelMedium: TextStyle(
                     fontSize: 30
-                )
+                ),
+                titleLarge: TextStyle(
+                    fontSize: 22
+                ),
+              titleMedium: TextStyle(
+                fontSize: 28,
+              )
             )
         ),
         color: Theme.of(context).primaryColor,
