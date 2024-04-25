@@ -15,10 +15,20 @@ class Switch_Theme extends StatelessWidget {
         theme: ThemeData.light().copyWith(
           secondaryHeaderColor: Colors.teal,
           primaryColor: Colors.grey,
+          textTheme: TextTheme(
+            labelLarge: TextStyle(
+              fontSize: 40,
+            )
+          )
         ),
         darkTheme: ThemeData.dark().copyWith(
           primaryColor: Colors.teal,
-          secondaryHeaderColor: Colors.grey
+          secondaryHeaderColor: Colors.grey,
+            textTheme: TextTheme(
+                labelLarge: TextStyle(
+                  fontSize: 40,
+                )
+            )
         ),
         color: Theme.of(context).primaryColor,
 
