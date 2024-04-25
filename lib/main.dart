@@ -1,4 +1,5 @@
 import 'package:advflutterch_1/screens/Stepper/Views/Stepper_1/Stepper_first.dart';
+import 'package:advflutterch_1/screens/Stepper/Views/Stepper_2/Stepper_second.dart';
 import 'package:advflutterch_1/screens/first_page/Views/Switch_theme_Screen/Switch_theme_screen.dart';
 import 'package:flutter/material.dart';
 
@@ -59,12 +60,12 @@ class MyApp extends StatelessWidget {
       color: Theme.of(context).primaryColor,
 
 
-      initialRoute: '/stepper_first',
+      initialRoute: '/stepper_second',
 
       routes: {
         '/' : (context) => const Switch_Theme(),
         '/stepper_first' : (context) => const Stepper_first(),
-        '/stepper_second' : (context) => const Switch_Theme(),
+        '/stepper_second' : (context) => const Stepper_second(),
 
       },
 

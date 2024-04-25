@@ -21,7 +21,7 @@ class _Stepper_firstState extends State<Stepper_first> {
         appBar: AppBar(
           backgroundColor: Colors.blue,
           title: Text(
-            'Stepper Demo',
+            'Stepper Demo first',
             style: TextStyle(color: Colors.white),
           ),
           centerTitle: true,
