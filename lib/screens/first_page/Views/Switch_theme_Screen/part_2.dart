@@ -51,7 +51,9 @@ class _switch_theme_2State extends State<switch_theme_2> {
               alignment: Alignment.center,
               child:  Text(
                 'Light theme',
-                style: Theme.of(context).textTheme.titleLarge
+                style: TextStyle(
+                fontSize: 28
+                )
               ),
             ),
           // ),
@@ -73,7 +75,9 @@ class _switch_theme_2State extends State<switch_theme_2> {
               alignment: Alignment.center,
               child: Text(
                 'Dark theme',
-                style: Theme.of(context).textTheme.titleMedium
+                style: TextStyle(
+                  fontSize: 28
+                )
               ),
             ),
           // ),
