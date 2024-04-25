@@ -18,7 +18,10 @@ class Switch_Theme extends StatelessWidget {
           textTheme: TextTheme(
             labelLarge: TextStyle(
               fontSize: 40,
-            )
+            ),
+           titleMedium: TextStyle(
+             fontSize: 35
+           )
           )
         ),
         darkTheme: ThemeData.dark().copyWith(

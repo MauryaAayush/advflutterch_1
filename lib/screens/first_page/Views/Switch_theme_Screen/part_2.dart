@@ -27,9 +27,9 @@ class _switch_theme_2State extends State<switch_theme_2> {
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
 
-          Text('YO Man!'),
-          Text(" It's simple example of"),
-          Text('dark theme'),
+          Text('YO Man!',style: Theme.of(context).textTheme.labelLarge,),
+          Text(" It's simple example of",style: Theme.of(context).textTheme.titleMedium,),
+          Text('dark theme',style: Theme.of(context).textTheme.labelMedium,),
 
           SizedBox(height: height*0.15,),
 
