@@ -1,9 +1,14 @@
 import 'package:advflutterch_1/utils/Global_area.dart';
 import 'package:flutter/material.dart';
 
-class switch_theme_2 extends StatelessWidget {
+class switch_theme_2 extends StatefulWidget {
   const switch_theme_2({super.key});
 
+  @override
+  State<switch_theme_2> createState() => _switch_theme_2State();
+}
+
+class _switch_theme_2State extends State<switch_theme_2> {
   @override
   Widget build(BuildContext context) {
 
@@ -21,6 +26,13 @@ class switch_theme_2 extends StatelessWidget {
       body: Column(
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
+
+          Text('YO Man!'),
+          Text(" It's simple example of"),
+          Text('dark theme'),
+
+          SizedBox(height: height*0.15,),
+
           // InkWell(
           //   onTap: () {
           //     setState(() {
