@@ -1,5 +1,19 @@
 # advflutterch_1
 
+-----------------------------------------------------------
+               Switch Theme
+------------------------------------------------------------
+
+
+
+
+
+<img src = "https://github.com/MauryaAayush/advflutterch_1/assets/143180849/3a76dbae-5622-49f1-9737-5a905270c3a4" height = 500px>
+<img src = "https://github.com/MauryaAayush/advflutterch_1/assets/143180849/e23fdcf0-46f3-4134-af0f-7b68d3ee8409" height = 500px>
+
+
+
+
 A new Flutter project.
 
 ## Getting Started
