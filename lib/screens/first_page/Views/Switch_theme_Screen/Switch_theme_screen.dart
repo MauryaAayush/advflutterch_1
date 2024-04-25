@@ -12,26 +12,29 @@ class Switch_Theme extends StatelessWidget {
         debugShowCheckedModeBanner: false,
 
         themeMode: ThemeMode.system,
-        theme: ThemeData.light().copyWith(
+        theme: ThemeData().copyWith(
           secondaryHeaderColor: Colors.teal,
           primaryColor: Colors.grey,
-          // textTheme: TextTheme(
-          //   labelLarge: TextStyle(
-          //     fontSize: 40,
-          //   ),
-          //  titleMedium: TextStyle(
-          //    fontSize: 40
-          //  )
-          // )
+          textTheme: TextTheme(
+            labelLarge: TextStyle(
+              fontSize: 50,
+            ),
+           titleMedium: TextStyle(
+             fontSize: 30
+           )
+          )
         ),
         darkTheme: ThemeData.dark().copyWith(
           primaryColor: Colors.teal,
           secondaryHeaderColor: Colors.grey,
-            // textTheme: TextTheme(
-            //     labelLarge: TextStyle(
-            //       fontSize: 40,
-            //     )
-            // )
+            textTheme: TextTheme(
+                labelLarge: TextStyle(
+                  fontSize: 50,
+                ),
+                titleMedium: TextStyle(
+                    fontSize: 30
+                )
+            )
         ),
         color: Theme.of(context).primaryColor,
 
