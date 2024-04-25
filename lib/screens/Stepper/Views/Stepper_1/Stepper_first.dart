@@ -66,8 +66,26 @@ class _Stepper_firstState extends State<Stepper_first> {
                   )
                 ),
               )),
-              Step(title: Text('Address'), content: Text('we are trying second')),
-              Step(title: Text('Mobile Number'), content: Text('we are trying third')),
+              Step(title: Text('Address'), content: TextField(
+                decoration: InputDecoration(
+                    labelText: "Address",
+                    border: UnderlineInputBorder(
+                        borderSide: BorderSide(
+                            color: Theme.of(context).secondaryHeaderColor
+                        )
+                    )
+                ),
+              )),
+              Step(title: Text('Mobile Number'), content: TextField(
+                decoration: InputDecoration(
+                    labelText: "Mobile Number",
+                    border: UnderlineInputBorder(
+                        borderSide: BorderSide(
+                            color: Theme.of(context).secondaryHeaderColor
+                        )
+                    )
+                ),
+              )),
 
             ]));
   }
