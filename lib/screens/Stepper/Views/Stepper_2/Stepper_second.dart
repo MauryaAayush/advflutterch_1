@@ -56,36 +56,68 @@ class _Stepper_secondState extends State<Stepper_second> {
               });
             },
             steps: [
-              Step(title: Text('Account'), content: TextField(
-                decoration: InputDecoration(
-                    labelText: "Account",
-                    border: UnderlineInputBorder(
-                        borderSide: BorderSide(
-                            color: Theme.of(context).secondaryHeaderColor
-                        )
-                    )
+              Step(
+
+
+                title: Text('Personal'),
+                content: Column(
+                  children: [
+                    TextField(
+                      decoration: InputDecoration(
+                        labelText: 'Enter Your Fist Name',
+                      ),
+                    ),
+                    TextField(
+                      decoration: InputDecoration(
+
+                        labelText: 'Enter Your Last Name',
+                      ),
+                    ),
+                  ],
                 ),
-              )),
-              Step(title: Text('Address'), content: TextField(
-                decoration: InputDecoration(
-                    labelText: "Address",
-                    border: UnderlineInputBorder(
-                        borderSide: BorderSide(
-                            color: Theme.of(context).secondaryHeaderColor
-                        )
-                    )
+              ),
+
+
+              Step(
+
+                title: Text('Contact'),
+                content: Column(
+                  children: [
+                    TextField(
+                      decoration: InputDecoration(
+
+                        prefixIcon: Icon(Icons.email),
+                        hintText: 'Email',
+                      ),
+                    ),
+                    SizedBox(height: 30,),
+                    TextField(
+                      decoration: InputDecoration(
+                        prefixIcon: Icon(Icons.home),
+                        hintText: 'Address',
+                      ),
+                    ),
+                    SizedBox(height: 30,),
+                    TextField(
+                      decoration: InputDecoration(
+                        prefixIcon: Icon(Icons.phone),
+                        hintText: 'Mobile No',
+                      ),
+                    ),
+                  ],
                 ),
-              )),
-              Step(title: Text('Mobile Number'), content: TextField(
-                decoration: InputDecoration(
-                    labelText: "Mobile Number",
-                    border: UnderlineInputBorder(
-                        borderSide: BorderSide(
-                            color: Theme.of(context).secondaryHeaderColor
-                        )
-                    )
+              ),
+
+
+              Step(
+
+                title: Text('Upload'),
+                content: TextField(
+                  decoration: InputDecoration(
+                    labelText: 'Mobile Number',
+                  ),
                 ),
-              )),
+              ),
 
             ]));
   }
