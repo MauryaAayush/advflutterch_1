@@ -53,7 +53,8 @@ class _Stepper_secondState extends State<Stepper_second> {
                 GlobalVariable.Stepperfirstindex = value;
               });
             },
-            steps: [
+
+            steps: const [
               Step(
                 title: Text('Personal'),
                 content: Column(
