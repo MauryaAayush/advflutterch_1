@@ -33,9 +33,7 @@ class _Stepper_firstState extends State<Stepper_first> {
         ),
         body: Theme(
           data: ThemeData(
-
             colorScheme: ColorScheme.fromSwatch(primarySwatch: Colors.blue,),
-
           ),
           child: Stepper(
               connectorColor:
