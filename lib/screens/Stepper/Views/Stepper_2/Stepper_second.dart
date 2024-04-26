@@ -13,9 +13,7 @@ class _Stepper_secondState extends State<Stepper_second> {
   Widget build(BuildContext context) {
     return Scaffold(
         floatingActionButton: FloatingActionButton(
-          onPressed: () {
-
-          },
+          onPressed: () {},
           child: Icon(Icons.add),
         ),
         appBar: AppBar(
@@ -32,9 +30,9 @@ class _Stepper_secondState extends State<Stepper_second> {
           elevation: 10,
         ),
         body: Stepper(
-          type: StepperType.horizontal,
+            type: StepperType.horizontal,
             connectorColor:
-            MaterialStateColor.resolveWith((states) => Colors.blue),
+                MaterialStateColor.resolveWith((states) => Colors.blue),
             // onStepContinue: ,
             currentStep: GlobalVariable.Stepperfirstindex,
             onStepContinue: () {
@@ -57,8 +55,6 @@ class _Stepper_secondState extends State<Stepper_second> {
             },
             steps: [
               Step(
-
-
                 title: Text('Personal'),
                 content: Column(
                   children: [
@@ -69,37 +65,54 @@ class _Stepper_secondState extends State<Stepper_second> {
                     ),
                     TextField(
                       decoration: InputDecoration(
-
                         labelText: 'Enter Your Last Name',
                       ),
                     ),
                   ],
                 ),
               ),
-
-
               Step(
-
                 title: Text('Contact'),
                 content: Column(
                   children: [
                     TextField(
                       decoration: InputDecoration(
-
                         prefixIcon: Icon(Icons.email),
                         hintText: 'Email',
+                        border: OutlineInputBorder(
+                          borderSide: BorderSide(color: Colors.black),
+                        ),
+                        focusedBorder: OutlineInputBorder(
+                          borderSide: BorderSide(color: Colors.black),
+                        ),
                       ),
                     ),
-                    SizedBox(height: 30,),
+                    SizedBox(
+                      height: 30,
+                    ),
                     TextField(
                       decoration: InputDecoration(
                         prefixIcon: Icon(Icons.home),
                         hintText: 'Address',
+                        border: OutlineInputBorder(
+                          borderSide: BorderSide(color: Colors.black),
+                        ),
+                        focusedBorder: OutlineInputBorder(
+                          borderSide: BorderSide(color: Colors.black),
+                        ),
                       ),
                     ),
-                    SizedBox(height: 30,),
+                    SizedBox(
+                      height: 30,
+                    ),
                     TextField(
                       decoration: InputDecoration(
+                        border: OutlineInputBorder(
+                          borderSide: BorderSide(color: Colors.black),
+                        ),
+                        focusedBorder: OutlineInputBorder(
+                          borderSide: BorderSide(color: Colors.black),
+                        ),
                         prefixIcon: Icon(Icons.phone),
                         hintText: 'Mobile No',
                       ),
@@ -107,18 +120,9 @@ class _Stepper_secondState extends State<Stepper_second> {
                   ],
                 ),
               ),
-
-
               Step(
-
-                title: Text('Upload'),
-                content: TextField(
-                  decoration: InputDecoration(
-                    labelText: 'Under processing',
-                  ),
-                ),
-              ),
-
+                  title: Text('Upload'),
+                  content: Text("Press Continue for Submission")),
             ]));
   }
 }
