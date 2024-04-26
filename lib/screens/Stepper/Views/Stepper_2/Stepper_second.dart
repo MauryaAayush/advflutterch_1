@@ -61,11 +61,20 @@ class _Stepper_secondState extends State<Stepper_second> {
                     TextField(
                       decoration: InputDecoration(
                         labelText: 'Enter Your Fist Name',
+                        border: OutlineInputBorder(
+                          borderSide: BorderSide(color: Colors.black),
+                        ),
                       ),
+                    ),
+                    SizedBox(
+                      height: 30,
                     ),
                     TextField(
                       decoration: InputDecoration(
                         labelText: 'Enter Your Last Name',
+                        border: OutlineInputBorder(
+                          borderSide: BorderSide(color: Colors.black),
+                        ),
                       ),
                     ),
                   ],
@@ -78,7 +87,7 @@ class _Stepper_secondState extends State<Stepper_second> {
                     TextField(
                       decoration: InputDecoration(
                         prefixIcon: Icon(Icons.email),
-                        hintText: 'Email',
+                        labelText: 'Email',
                         border: OutlineInputBorder(
                           borderSide: BorderSide(color: Colors.black),
                         ),
@@ -93,13 +102,14 @@ class _Stepper_secondState extends State<Stepper_second> {
                     TextField(
                       decoration: InputDecoration(
                         prefixIcon: Icon(Icons.home),
-                        hintText: 'Address',
+                        labelText: 'Address',
                         border: OutlineInputBorder(
                           borderSide: BorderSide(color: Colors.black),
                         ),
                         focusedBorder: OutlineInputBorder(
                           borderSide: BorderSide(color: Colors.black),
                         ),
+                        contentPadding: EdgeInsets.all(60)
                       ),
                     ),
                     SizedBox(
@@ -114,7 +124,7 @@ class _Stepper_secondState extends State<Stepper_second> {
                           borderSide: BorderSide(color: Colors.black),
                         ),
                         prefixIcon: Icon(Icons.phone),
-                        hintText: 'Mobile No',
+                        labelText: 'Mobile No',
                       ),
                     ),
                   ],
