@@ -37,7 +37,6 @@
              1.3 Provider  (Flow chart)
 ------------------------------------------------------------
 
-<img src = "https://github.com/MauryaAayush/advflutterch_1/assets/143180849/ea04d9ad-1510-4046-86f7-65eea0ae10d2" height = 500px>
 
 <img src = "https://github.com/MauryaAayush/advflutterch_1/assets/143180849/3dd4c142-aaa7-48a2-8680-a68d129452bd" height = 500px>
 
