@@ -51,6 +51,7 @@ class Switch_Theme extends StatelessWidget {
               )
             )
         ),
+
         color: Theme.of(context).primaryColor,
 
         home: const switch_theme_2());
