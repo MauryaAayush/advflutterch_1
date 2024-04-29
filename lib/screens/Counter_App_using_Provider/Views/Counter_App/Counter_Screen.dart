@@ -8,19 +8,21 @@ class CounterScreen extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         centerTitle: true,
-        title: Text('Counter App',style: TextStyle(fontSize: 20,fontWeight: FontWeight.w600),),
+        title: Text(
+          'Counter App',
+          style: TextStyle(fontSize: 20, fontWeight: FontWeight.w600),
+        ),
       ),
       body: Center(
-        child: Text('00',style: TextStyle(
-          fontSize: 35,
-          fontWeight: FontWeight.w600
-        ),),
+        child: Text(
+          '00',
+          style: TextStyle(fontSize: 35, fontWeight: FontWeight.w600),
+        ),
       ),
-
-      floatingActionButton: FloatingActionButton(onPressed: () {
-
-      },child: Icon(Icons.add),),
+      floatingActionButton: FloatingActionButton(
+        onPressed: () {},
+        child: Icon(Icons.add),
+      ),
     );
   }
 }
-
