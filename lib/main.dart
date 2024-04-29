@@ -9,20 +9,17 @@ import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 
 void main() {
-  runApp(
-
-      MultiProvider(providers: [
-        ChangeNotifierProvider(
-          create: (context) => CounterProvider(),
-        ),
-        ChangeNotifierProvider(create: (context) => ThemeProvider(),)
-      ],
-          child: const MyApp(),
-  )
-
-
-
-    );
+  runApp(MultiProvider(
+    providers: [
+      ChangeNotifierProvider(
+        create: (context) => CounterProvider(),
+      ),
+      ChangeNotifierProvider(
+        create: (context) => ThemeProvider(),
+      )
+    ],
+    child: const MyApp(),
+  ));
 }
 
 class MyApp extends StatelessWidget {
