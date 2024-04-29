@@ -1,13 +1,10 @@
 import 'package:flutter/material.dart';
 
-class ThemeProvider extends ChangeNotifier
-{
-    bool isdark = false;
+class ThemeProvider extends ChangeNotifier {
+  bool isdark = false;
 
-    themechange(bool value)
-    {
-      isdark = value;
-      notifyListeners();
-    }
-
+  themechange(bool value) {
+    isdark = value;
+    notifyListeners();
+  }
 }
