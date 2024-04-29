@@ -2,16 +2,27 @@ import 'package:advflutterch_1/screens/Counter_App_using_Provider/Provider/Count
 import 'package:advflutterch_1/screens/Counter_App_using_Provider/Views/Counter_App/Counter_Screen.dart';
 import 'package:advflutterch_1/screens/Stepper/Views/Stepper_1/Stepper_first.dart';
 import 'package:advflutterch_1/screens/Stepper/Views/Stepper_2/Stepper_second.dart';
+import 'package:advflutterch_1/screens/Theme_Change_Using_Provider/Provider/Theme_Change_Screen.dart';
 import 'package:advflutterch_1/screens/Theme_Change_Using_Provider/Views/Change_Theme_Screen.dart';
 import 'package:advflutterch_1/screens/first_page/Views/Switch_theme_Screen/Switch_theme_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 
 void main() {
-  runApp(ChangeNotifierProvider(
-    create: (context) => CounterProvider(),
-    child: const MyApp(),
-  ));
+  runApp(
+
+      MultiProvider(providers: [
+        ChangeNotifierProvider(
+          create: (context) => CounterProvider(),
+        ),
+        ChangeNotifierProvider(create: (context) => ThemeProvider(),)
+      ],
+          child: const MyApp(),
+  )
+
+
+
+    );
 }
 
 class MyApp extends StatelessWidget {
