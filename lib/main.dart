@@ -2,6 +2,7 @@ import 'package:advflutterch_1/screens/Counter_App_using_Provider/Provider/Count
 import 'package:advflutterch_1/screens/Counter_App_using_Provider/Views/Counter_App/Counter_Screen.dart';
 import 'package:advflutterch_1/screens/Stepper/Views/Stepper_1/Stepper_first.dart';
 import 'package:advflutterch_1/screens/Stepper/Views/Stepper_2/Stepper_second.dart';
+import 'package:advflutterch_1/screens/Theme_Change_Using_Provider/Views/Change_Theme_Screen.dart';
 import 'package:advflutterch_1/screens/first_page/Views/Switch_theme_Screen/Switch_theme_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
@@ -61,12 +62,13 @@ class MyApp extends StatelessWidget {
         // )
       ),
       color: Theme.of(context).primaryColor,
-      initialRoute: '/Counter',
+      initialRoute: '/ThemeProvider',
       routes: {
         '/': (context) => const Switch_Theme(),
         '/stepper_first': (context) => const Stepper_first(),
         '/stepper_second': (context) => const Stepper_second(),
         '/Counter': (context) => const CounterScreen(),
+        '/ThemeProvider': (context) => const ThemeChange(),
       },
     );
   }
