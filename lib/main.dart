@@ -30,44 +30,27 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'Practice',
       debugShowCheckedModeBanner: false,
-      themeMode: Provider.of<ThemeProvider>(context, listen: true).isdark ? ThemeMode.light:ThemeMode.dark,
-      theme: ThemeData().copyWith(
-        secondaryHeaderColor: Colors.teal,
-        primaryColor: Colors.grey,
-        // textTheme: TextTheme(
-        //     labelLarge: TextStyle(
-        //         fontSize: 20,
-        //         color: Colors.black
-        //     ),
-        //     labelMedium: TextStyle(
-        //         fontSize: 20,
-        //         color: Colors.black
-        //     ),
-        //     titleLarge: TextStyle(
-        //         fontSize: 20
-        //     ),
-        //     titleMedium: TextStyle(
-        //         fontSize: 22
-        //     )
-        // )
+      themeMode: Provider.of<ThemeProvider>(context, listen: true).isdark ? ThemeMode.dark:ThemeMode.light,
+      theme: ThemeData(
+        colorScheme: ColorScheme.light(
+          background: Colors.white,
+          primary: Colors.purple,
+          secondary: Colors.green,
+          tertiary: Colors.blue,
+          scrim: Colors.deepOrange,
+          surface: Colors.purple
+
+        )
       ),
-      darkTheme: ThemeData.dark().copyWith(
-        primaryColor: Colors.teal,
-        secondaryHeaderColor: Colors.grey,
-        // textTheme: TextTheme(
-        //     labelLarge: TextStyle(
-        //       fontSize: 20,
-        //     ),
-        //     labelMedium: TextStyle(
-        //         fontSize: 20
-        //     ),
-        //     titleLarge: TextStyle(
-        //         fontSize: 22
-        //     ),
-        //     titleMedium: TextStyle(
-        //       fontSize: 28,
-        //     )
-        // )
+      darkTheme: ThemeData(
+                colorScheme: ColorScheme.dark(
+                  background: Colors.black,
+                  primary: Colors.amber,
+                  secondary: Colors.blue,
+                  tertiary: Colors.pink,
+                  scrim: Colors.yellow,
+                  surface: Colors.amber
+                )
       ),
       color: Theme.of(context).primaryColor,
       initialRoute: '/ThemeProvider',
