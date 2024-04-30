@@ -29,6 +29,7 @@ class ThemeChange extends StatelessWidget {
           children: [
             CircleAvatar(
               radius: 75,
+              foregroundImage: AssetImage('assets/images/avtar.png'),
             ),
             Text(
               'Testing User',

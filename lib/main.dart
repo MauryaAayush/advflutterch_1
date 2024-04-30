@@ -53,7 +53,7 @@ class MyApp extends StatelessWidget {
                 )
       ),
       color: Theme.of(context).primaryColor,
-      initialRoute: '/ThemeProvider',
+      initialRoute: '/Counter',
       routes: {
         '/': (context) => const Switch_Theme(),
         '/stepper_first': (context) => const Stepper_first(),
