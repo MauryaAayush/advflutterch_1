@@ -41,6 +41,27 @@
 <img src = "https://github.com/MauryaAayush/advflutterch_1/assets/143180849/3dd4c142-aaa7-48a2-8680-a68d129452bd" height = 500px>
 
 
+-----------------------------------------------------------
+             1.4.1 Counter using Provider
+------------------------------------------------------------
+
+<img src = "https://github.com/MauryaAayush/advflutterch_1/assets/143180849/968f35ec-55b0-4739-9ac7-88f905b7281c" height = 500px>
+
+
+[Screen_recording_20240430_135650.webm](https://github.com/MauryaAayush/advflutterch_1/assets/143180849/34b98fc5-181e-44ce-9e91-c9825ed6b308)
+
+
+-----------------------------------------------------------
+             1.4.2 Change Theme using Provider
+------------------------------------------------------------
+<img src = "https://github.com/MauryaAayush/advflutterch_1/assets/143180849/37fd0635-d9fc-48d4-a454-8731a55d74bd" height = 500px>
+<img src = "https://github.com/MauryaAayush/advflutterch_1/assets/143180849/91a56711-b7fd-4854-b57a-0b259294a7a6" height = 500px>
+
+
+
+
+[Screen_recording_20240430_140333.webm](https://github.com/MauryaAayush/advflutterch_1/assets/143180849/ce776233-4c36-4e4b-99a5-0a1a84b2b3b0)
+
 A new Flutter project.
 
 ## Getting Started
