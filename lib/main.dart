@@ -30,7 +30,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'Practice',
       debugShowCheckedModeBanner: false,
-      themeMode: ThemeMode.system,
+      themeMode: Provider.of<ThemeProvider>(context, listen: true).isdark ? ThemeMode.light:ThemeMode.dark,
       theme: ThemeData().copyWith(
         secondaryHeaderColor: Colors.teal,
         primaryColor: Colors.grey,
