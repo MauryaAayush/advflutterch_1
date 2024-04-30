@@ -2,7 +2,6 @@ import 'package:advflutterch_1/screens/Theme_Change_Using_Provider/Provider/Them
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 
-
 class ThemeChange extends StatelessWidget {
   const ThemeChange({super.key});
 
@@ -17,9 +16,11 @@ class ThemeChange extends StatelessWidget {
           style: TextStyle(fontSize: 22, fontWeight: FontWeight.w600),
         ),
         actions: [
-          Padding(padding: EdgeInsets.only(right: 20),
-          child:  Icon(Icons.add_circle_outline),),
-         ],
+          Padding(
+            padding: EdgeInsets.only(right: 20),
+            child: Icon(Icons.add_circle_outline),
+          ),
+        ],
       ),
       body: Center(
           child: Padding(
@@ -32,7 +33,7 @@ class ThemeChange extends StatelessWidget {
               foregroundImage: AssetImage('assets/images/avtar.png'),
             ),
             Text(
-              'Testing User',
+              'Aayush',
               style: TextStyle(fontSize: 30, fontWeight: FontWeight.w600),
             ),
             SizedBox(
@@ -40,12 +41,20 @@ class ThemeChange extends StatelessWidget {
             ),
             Row(
               children: [
-                Icon(Icons.sunny,color: Theme.of(context).colorScheme.primary,size: 30,),
+                Icon(
+                  Provider.of<ThemeProvider>(context, listen: true).isdark
+                      ? Icons.nightlight
+                      : Icons.sunny,
+                  color: Theme.of(context).colorScheme.primary,
+                  size: 30,
+                ),
                 SizedBox(
                   width: 18,
                 ),
                 Text(
-                   "Light Mode" /*: "Dark Mode"*/ ,
+                  Provider.of<ThemeProvider>(context, listen: true).isdark
+                      ? "Dark Mode"
+                      : "Light Mode",
                   style: TextStyle(fontSize: 20, fontWeight: FontWeight.w600),
                 ),
                 SizedBox(
@@ -53,7 +62,8 @@ class ThemeChange extends StatelessWidget {
                 ),
                 Switch(
                   inactiveThumbColor: Colors.white,
-                  value: Provider.of<ThemeProvider>(context, listen: true).isdark,
+                  value:
+                      Provider.of<ThemeProvider>(context, listen: true).isdark,
                   onChanged: (value) {
                     Provider.of<ThemeProvider>(context, listen: false)
                         .themechange(value);
@@ -63,7 +73,11 @@ class ThemeChange extends StatelessWidget {
             ),
             Row(
               children: [
-                Icon(Icons.grid_on_rounded,color: Theme.of(context).colorScheme.secondary,size: 30,),
+                Icon(
+                  Icons.grid_on_rounded,
+                  color: Theme.of(context).colorScheme.secondary,
+                  size: 30,
+                ),
                 SizedBox(
                   width: 20,
                 ),
@@ -75,7 +89,11 @@ class ThemeChange extends StatelessWidget {
             ),
             Row(
               children: [
-                Icon(Icons.settings,color: Theme.of(context).colorScheme.tertiary,size: 30,),
+                Icon(
+                  Icons.settings,
+                  color: Theme.of(context).colorScheme.tertiary,
+                  size: 30,
+                ),
                 SizedBox(
                   width: 18,
                 ),
@@ -87,7 +105,11 @@ class ThemeChange extends StatelessWidget {
             ),
             Row(
               children: [
-                Icon(Icons.speaker_notes_outlined,color: Theme.of(context).colorScheme.scrim,size: 30,),
+                Icon(
+                  Icons.speaker_notes_outlined,
+                  color: Theme.of(context).colorScheme.scrim,
+                  size: 30,
+                ),
                 SizedBox(
                   width: 18,
                 ),
@@ -99,7 +121,11 @@ class ThemeChange extends StatelessWidget {
             ),
             Row(
               children: [
-                Icon(Icons.notifications,color: Theme.of(context).colorScheme.surface,size: 30,),
+                Icon(
+                  Icons.notifications,
+                  color: Theme.of(context).colorScheme.surface,
+                  size: 30,
+                ),
                 SizedBox(
                   width: 18,
                 ),
@@ -109,8 +135,9 @@ class ThemeChange extends StatelessWidget {
                 ),
               ],
             ),
-
-            SizedBox(height: 20,)
+            SizedBox(
+              height: 20,
+            )
           ],
         ),
       )),
