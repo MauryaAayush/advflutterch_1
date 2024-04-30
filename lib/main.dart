@@ -1,5 +1,6 @@
 import 'package:advflutterch_1/screens/Counter_App_using_Provider/Provider/Counter_Provider.dart';
 import 'package:advflutterch_1/screens/Counter_App_using_Provider/Views/Counter_App/Counter_Screen.dart';
+import 'package:advflutterch_1/screens/Intro/Views/Screens/intro1.dart';
 import 'package:advflutterch_1/screens/Stepper/Views/Stepper_1/Stepper_first.dart';
 import 'package:advflutterch_1/screens/Stepper/Views/Stepper_2/Stepper_second.dart';
 import 'package:advflutterch_1/screens/Theme_Change_Using_Provider/Provider/Theme_Change_Screen.dart';
@@ -53,13 +54,14 @@ class MyApp extends StatelessWidget {
                 )
       ),
       color: Theme.of(context).primaryColor,
-      initialRoute: '/ThemeProvider',
+      initialRoute: '/Intro',
       routes: {
         '/': (context) => const Switch_Theme(),
         '/stepper_first': (context) => const Stepper_first(),
         '/stepper_second': (context) => const Stepper_second(),
         '/Counter': (context) => const CounterScreen(),
         '/ThemeProvider': (context) => const ThemeChange(),
+        '/Intro': (context) => const Intro1(),
       },
     );
   }

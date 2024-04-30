@@ -1,3 +1,4 @@
+import 'package:advflutterch_1/screens/Intro/Views/Screens/intro3.dart';
 import 'package:flutter/material.dart';
 
 class Intro2 extends StatelessWidget {
@@ -9,6 +10,11 @@ class Intro2 extends StatelessWidget {
       appBar: AppBar(
         title: Text('Intro2'),
       ),
+
+        body: Center(child: ElevatedButton(onPressed: () {
+          Navigator.of(context).push(
+            MaterialPageRoute(builder: (context) => const Intro3()));
+        }, child: Text('Next')),)
     );
   }
 }
