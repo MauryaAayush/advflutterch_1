@@ -1,3 +1,4 @@
+import 'package:advflutterch_1/screens/Contact/Views/Contact_Screen/Contact_Screen.dart';
 import 'package:advflutterch_1/screens/Counter_App_using_Provider/Provider/Counter_Provider.dart';
 import 'package:advflutterch_1/screens/Counter_App_using_Provider/Views/Counter_App/Counter_Screen.dart';
 import 'package:advflutterch_1/screens/Intro/Provider/Intro_Provider.dart';
@@ -59,13 +60,14 @@ class MyApp extends StatelessWidget {
                 )
       ),
       color: Theme.of(context).primaryColor,
-      initialRoute: '/Intro',
+      initialRoute: '/Contact',
       routes: {
         '/': (context) => const Switch_Theme(),
         '/stepper_first': (context) => const Stepper_first(),
         '/stepper_second': (context) => const Stepper_second(),
         '/Counter': (context) => const CounterScreen(),
         '/ThemeProvider': (context) => const ThemeChange(),
+        '/Contact': (context) => const Contact_Page(),
         '/Intro': (context) => Provider.of<IntroProvider>(context,listen: true).ischecked ? Home(): Intro1(),
       },
     );
