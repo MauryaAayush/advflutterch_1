@@ -89,6 +89,39 @@ class Contact_Page extends StatelessWidget {
                     Spacer(
                       flex: 1,
                     ),
+                    Icon(Icons.sms,size: 35,color: Colors.blue,),
+                    Spacer(
+                      flex: 1,
+                    ),
+                    Text('+91 8604949240',style: TextStyle(fontSize: 19,
+                        fontWeight: FontWeight.w500),),
+                    Spacer(
+                      flex: 3,
+                    ),
+                  ],
+                ),
+              ),
+
+              SizedBox(
+                height: 20,
+              ),
+              Container(
+                height: 65,
+                width: 400,
+                decoration: BoxDecoration(
+                    color: Colors.white,
+                    borderRadius: BorderRadius.circular(10),
+                    border: Border.all(
+                        color: Colors.blue.shade200,
+                        width: 1.5
+                    )
+                ),
+                child: Row(
+
+                  children: [
+                    Spacer(
+                      flex: 1,
+                    ),
                     Icon(Icons.mail_outline,size: 35,color: Colors.blue,),
                     Spacer(
                       flex: 1,
@@ -105,8 +138,13 @@ class Contact_Page extends StatelessWidget {
               SizedBox(
                 height: 20,
               ),
+
+
+
+
+
               Container(
-                height: 450,
+                height: 280,
                 width: 400,
                 decoration: BoxDecoration(
                     color: Colors.white,
@@ -114,9 +152,94 @@ class Contact_Page extends StatelessWidget {
                     border: Border.all(
                         color: Colors.blue.shade200,
                         width: 1.5
-                    )
+                    ),
                 ),
+                child: Column(
+                  children: [
 
+                    Padding(
+                      padding: const EdgeInsets.all(15.0),
+                      child: Text('Social Media',style: TextStyle(
+                        color: Colors.blue,
+                        fontSize: 24,
+                        fontWeight: FontWeight.w800
+                      ),),
+                    ),
+
+                    Divider(
+                       color: Colors.blue.shade200,
+                    ),
+
+                    SizedBox(
+                      height: 10,
+                    ),
+
+                    Row(
+                      children: [
+
+                        SizedBox(
+                          width: 30,
+                        ),
+                        Container(
+                          height: 40,
+                          width: 40,
+                          child: Image.asset('assets/images/github.png'),
+                        ),
+                        SizedBox(
+                          width: 32,
+                        ),
+
+
+                        Text('Github',style: TextStyle(
+                          fontSize: 19,
+                          fontWeight: FontWeight.w500,
+                          letterSpacing: 1
+                        ),)
+
+
+
+                      ],
+                    ),
+
+
+
+                    Padding(
+                      padding: const EdgeInsets.all(18.0),
+                      child: Divider(
+                        color: Colors.blue.shade200,
+                      ),
+                    ),
+                    SizedBox(
+                      height: 5,
+                    ),
+
+                    Row(
+                      children: [
+                        SizedBox(
+                          width: 30,
+                        ),
+                        Container(
+                          height: 40,
+                          width: 40,
+                          child: Image.asset('assets/images/linkedinn.png'),
+                        ),
+
+                        SizedBox(
+                          width: 30,
+                        ),
+                        Text('linkedin',style: TextStyle(
+                            fontSize: 19,
+                            fontWeight: FontWeight.w500,
+                            letterSpacing: 1
+                        ),)
+
+
+                      ],
+                    ),
+
+                  ],
+                ),
+                
               ),
 
 
