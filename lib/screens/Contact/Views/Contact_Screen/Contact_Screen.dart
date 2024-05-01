@@ -1,8 +1,5 @@
-import 'dart:html';
 
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter/widgets.dart';
 import 'package:url_launcher/url_launcher.dart' as launcher;
 
 class Contact_Page extends StatelessWidget {
@@ -47,7 +44,7 @@ class Contact_Page extends StatelessWidget {
 
               GestureDetector(
                 onTap: () {
-                Uri url = Uri.parse('tel : +91 8604949240');
+                Uri url = Uri.parse('tel:+91 8604949240');
                 launcher.launchUrl(url);
                 },
                 child: Container(
@@ -57,7 +54,7 @@ class Contact_Page extends StatelessWidget {
                       color: Colors.white,
                       borderRadius: BorderRadius.circular(10),
                       border:
-                          Border.all(color: Colors.blue.shade200, width: 1.5)),
+                          Border.all(color: Colors.blue.shade100, width: 1.5)),
                   child: Row(
                     children: [
                       Spacer(
@@ -90,7 +87,7 @@ class Contact_Page extends StatelessWidget {
 
               GestureDetector(
                 onTap: () {
-                  Uri url = Uri.parse('sms : +91 8604949240');
+                  Uri url = Uri.parse('sms:+91 8604949240');
                   launcher.launchUrl(url);
                 },
                 child: Container(
@@ -100,7 +97,7 @@ class Contact_Page extends StatelessWidget {
                       color: Colors.white,
                       borderRadius: BorderRadius.circular(10),
                       border:
-                          Border.all(color: Colors.blue.shade200, width: 1.5)),
+                          Border.all(color: Colors.blue.shade100, width: 1.5)),
                   child: Row(
                     children: [
                       Spacer(
@@ -133,7 +130,7 @@ class Contact_Page extends StatelessWidget {
 
               GestureDetector(
                 onTap: () {
-                  Uri url = Uri.parse('mailto : maayush235@gmail.com');
+                  Uri url = Uri.parse('mailto:maayush235@gmail.com');
                   launcher.launchUrl(url);
                 },
                 child: Container(
@@ -143,7 +140,7 @@ class Contact_Page extends StatelessWidget {
                       color: Colors.white,
                       borderRadius: BorderRadius.circular(10),
                       border:
-                          Border.all(color: Colors.blue.shade200, width: 1.5)),
+                          Border.all(color: Colors.blue.shade100, width: 1.5)),
                   child: Row(
                     children: [
                       Spacer(
@@ -237,27 +234,35 @@ class Contact_Page extends StatelessWidget {
                     SizedBox(
                       height: 5,
                     ),
-                    Row(
-                      children: [
-                        SizedBox(
-                          width: 30,
-                        ),
-                        Container(
-                          height: 40,
-                          width: 40,
-                          child: Image.asset('assets/images/linkedinn.png'),
-                        ),
-                        SizedBox(
-                          width: 30,
-                        ),
-                        Text(
-                          'linkedin',
-                          style: TextStyle(
-                              fontSize: 19,
-                              fontWeight: FontWeight.w500,
-                              letterSpacing: 1),
-                        )
-                      ],
+
+
+                    GestureDetector(
+                      onTap: () {
+                       Uri url = Uri.parse('https://www.linkedin.com/feed/');
+                       launcher.launchUrl(url);
+                      },
+                      child: Row(
+                        children: [
+                          SizedBox(
+                            width: 30,
+                          ),
+                          Container(
+                            height: 40,
+                            width: 40,
+                            child: Image.asset('assets/images/linkedinn.png'),
+                          ),
+                          SizedBox(
+                            width: 30,
+                          ),
+                          Text(
+                            'linkedin',
+                            style: TextStyle(
+                                fontSize: 19,
+                                fontWeight: FontWeight.w500,
+                                letterSpacing: 1),
+                          )
+                        ],
+                      ),
                     ),
                   ],
                 ),
