@@ -59,8 +59,19 @@
 
 
 
-
 [Screen_recording_20240430_140333.webm](https://github.com/MauryaAayush/advflutterch_1/assets/143180849/ce776233-4c36-4e4b-99a5-0a1a84b2b3b0)
+
+-----------------------------------------------------------
+             1.5 One time intro screen
+------------------------------------------------------------
+
+<img src = "https://github.com/MauryaAayush/advflutterch_1/assets/143180849/84d3dcc4-5f8c-4a92-8c24-2efa479e6cf3" height = 500px>
+<img src = "https://github.com/MauryaAayush/advflutterch_1/assets/143180849/6454e549-9172-4e8e-b978-430a20ecb0f1" height = 500px>
+<img src = "https://github.com/MauryaAayush/advflutterch_1/assets/143180849/ca9b1f32-bc33-4373-a4f8-6872ff6a30e2" height = 500px>
+<img src = "https://github.com/MauryaAayush/advflutterch_1/assets/143180849/ff98a9a9-2590-4d03-aaa5-be0a4a300054" height = 500px>
+
+
+
 
 A new Flutter project.
 
