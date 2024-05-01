@@ -200,27 +200,33 @@ class Contact_Page extends StatelessWidget {
                     SizedBox(
                       height: 10,
                     ),
-                    Row(
-                      children: [
-                        SizedBox(
-                          width: 30,
-                        ),
-                        Container(
-                          height: 40,
-                          width: 40,
-                          child: Image.asset('assets/images/github.png'),
-                        ),
-                        SizedBox(
-                          width: 32,
-                        ),
-                        Text(
-                          'Github',
-                          style: TextStyle(
-                              fontSize: 19,
-                              fontWeight: FontWeight.w500,
-                              letterSpacing: 1),
-                        )
-                      ],
+                    GestureDetector(
+                      onTap: () {
+                        Uri url = Uri.parse('https://github.com/MauryaAayush');
+                        launcher.launchUrl(url,mode: launcher.LaunchMode. inAppWebView);
+                      },
+                      child: Row(
+                        children: [
+                          SizedBox(
+                            width: 30,
+                          ),
+                          Container(
+                            height: 40,
+                            width: 40,
+                            child: Image.asset('assets/images/github.png'),
+                          ),
+                          SizedBox(
+                            width: 32,
+                          ),
+                          Text(
+                            'Github',
+                            style: TextStyle(
+                                fontSize: 19,
+                                fontWeight: FontWeight.w500,
+                                letterSpacing: 1),
+                          )
+                        ],
+                      ),
                     ),
                     Padding(
                       padding: const EdgeInsets.all(18.0),
