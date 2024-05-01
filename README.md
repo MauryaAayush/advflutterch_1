@@ -75,6 +75,24 @@
 
 [Screen_recording_20240501_151245_compressed.webm](https://github.com/MauryaAayush/advflutterch_1/assets/143180849/943b7326-bc8e-4397-bbd7-92d77e259192)
 
+
+
+-----------------------------------------------------------
+             1.5 One time intro screen
+------------------------------------------------------------
+
+
+<img src = "https://github.com/MauryaAayush/advflutterch_1/assets/143180849/9a51cce8-a876-416c-b22e-2fe1869c8004" height = 500px>
+
+
+https://github.com/MauryaAayush/advflutterch_1/assets/143180849/60e89e0e-70ec-43bf-ac5d-42fd5a32e1b0
+
+
+
+
+
+
+
 A new Flutter project.
 
 ## Getting Started
