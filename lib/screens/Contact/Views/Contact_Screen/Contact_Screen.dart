@@ -1,5 +1,9 @@
+import 'dart:html';
+
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter/widgets.dart';
+import 'package:url_launcher/url_launcher.dart' as launcher;
 
 class Contact_Page extends StatelessWidget {
   const Contact_Page({super.key});
@@ -43,7 +47,8 @@ class Contact_Page extends StatelessWidget {
 
               GestureDetector(
                 onTap: () {
-
+                Uri url = Uri.parse('tel : +91 8604949240');
+                launcher.launchUrl(url);
                 },
                 child: Container(
                   height: 65,
@@ -83,36 +88,42 @@ class Contact_Page extends StatelessWidget {
                 height: 20,
               ),
 
-              Container(
-                height: 65,
-                width: 400,
-                decoration: BoxDecoration(
-                    color: Colors.white,
-                    borderRadius: BorderRadius.circular(10),
-                    border:
-                        Border.all(color: Colors.blue.shade200, width: 1.5)),
-                child: Row(
-                  children: [
-                    Spacer(
-                      flex: 1,
-                    ),
-                    Icon(
-                      Icons.sms,
-                      size: 35,
-                      color: Colors.blue,
-                    ),
-                    Spacer(
-                      flex: 1,
-                    ),
-                    Text(
-                      '+91 8604949240',
-                      style:
-                          TextStyle(fontSize: 19, fontWeight: FontWeight.w500),
-                    ),
-                    Spacer(
-                      flex: 3,
-                    ),
-                  ],
+              GestureDetector(
+                onTap: () {
+                  Uri url = Uri.parse('sms : +91 8604949240');
+                  launcher.launchUrl(url);
+                },
+                child: Container(
+                  height: 65,
+                  width: 400,
+                  decoration: BoxDecoration(
+                      color: Colors.white,
+                      borderRadius: BorderRadius.circular(10),
+                      border:
+                          Border.all(color: Colors.blue.shade200, width: 1.5)),
+                  child: Row(
+                    children: [
+                      Spacer(
+                        flex: 1,
+                      ),
+                      Icon(
+                        Icons.sms,
+                        size: 35,
+                        color: Colors.blue,
+                      ),
+                      Spacer(
+                        flex: 1,
+                      ),
+                      Text(
+                        '+91 8604949240',
+                        style:
+                            TextStyle(fontSize: 19, fontWeight: FontWeight.w500),
+                      ),
+                      Spacer(
+                        flex: 3,
+                      ),
+                    ],
+                  ),
                 ),
               ),
 
@@ -120,36 +131,42 @@ class Contact_Page extends StatelessWidget {
                 height: 20,
               ),
 
-              Container(
-                height: 65,
-                width: 400,
-                decoration: BoxDecoration(
-                    color: Colors.white,
-                    borderRadius: BorderRadius.circular(10),
-                    border:
-                        Border.all(color: Colors.blue.shade200, width: 1.5)),
-                child: Row(
-                  children: [
-                    Spacer(
-                      flex: 1,
-                    ),
-                    Icon(
-                      Icons.mail_outline,
-                      size: 35,
-                      color: Colors.blue,
-                    ),
-                    Spacer(
-                      flex: 1,
-                    ),
-                    Text(
-                      'maayush235@gmail.com',
-                      style:
-                          TextStyle(fontSize: 19, fontWeight: FontWeight.w500),
-                    ),
-                    Spacer(
-                      flex: 1,
-                    ),
-                  ],
+              GestureDetector(
+                onTap: () {
+                  Uri url = Uri.parse('mailto : maayush235@gmail.com');
+                  launcher.launchUrl(url);
+                },
+                child: Container(
+                  height: 65,
+                  width: 400,
+                  decoration: BoxDecoration(
+                      color: Colors.white,
+                      borderRadius: BorderRadius.circular(10),
+                      border:
+                          Border.all(color: Colors.blue.shade200, width: 1.5)),
+                  child: Row(
+                    children: [
+                      Spacer(
+                        flex: 1,
+                      ),
+                      Icon(
+                        Icons.mail_outline,
+                        size: 35,
+                        color: Colors.blue,
+                      ),
+                      Spacer(
+                        flex: 1,
+                      ),
+                      Text(
+                        'maayush235@gmail.com',
+                        style:
+                            TextStyle(fontSize: 19, fontWeight: FontWeight.w500),
+                      ),
+                      Spacer(
+                        flex: 1,
+                      ),
+                    ],
+                  ),
                 ),
               ),
 
