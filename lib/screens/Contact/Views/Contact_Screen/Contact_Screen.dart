@@ -36,7 +36,6 @@ class Contact_Page extends StatelessWidget {
                     fontWeight: FontWeight.w500,
                     letterSpacing: 1),
               ),
-
               SizedBox(
                 height: 20,
               ),
@@ -44,25 +43,28 @@ class Contact_Page extends StatelessWidget {
                 height: 65,
                 width: 400,
                 decoration: BoxDecoration(
-                  color: Colors.white,
-                  borderRadius: BorderRadius.circular(10),
-                  border: Border.all(
-                    color: Colors.blue.shade200,
-                    width: 1.5
-                  )
-                ),
+                    color: Colors.white,
+                    borderRadius: BorderRadius.circular(10),
+                    border:
+                        Border.all(color: Colors.blue.shade200, width: 1.5)),
                 child: Row(
-
                   children: [
                     Spacer(
                       flex: 1,
                     ),
-                    Icon(Icons.phone_android_outlined,size: 35,color: Colors.blue,),
+                    Icon(
+                      Icons.phone_android_outlined,
+                      size: 35,
+                      color: Colors.blue,
+                    ),
                     Spacer(
                       flex: 1,
                     ),
-                    Text('+91 8604949240',style: TextStyle(fontSize: 19,
-                    fontWeight: FontWeight.w500),),
+                    Text(
+                      '+91 8604949240',
+                      style:
+                          TextStyle(fontSize: 19, fontWeight: FontWeight.w500),
+                    ),
                     Spacer(
                       flex: 3,
                     ),
@@ -78,30 +80,32 @@ class Contact_Page extends StatelessWidget {
                 decoration: BoxDecoration(
                     color: Colors.white,
                     borderRadius: BorderRadius.circular(10),
-                    border: Border.all(
-                        color: Colors.blue.shade200,
-                        width: 1.5
-                    )
-                ),
+                    border:
+                        Border.all(color: Colors.blue.shade200, width: 1.5)),
                 child: Row(
-
                   children: [
                     Spacer(
                       flex: 1,
                     ),
-                    Icon(Icons.sms,size: 35,color: Colors.blue,),
+                    Icon(
+                      Icons.sms,
+                      size: 35,
+                      color: Colors.blue,
+                    ),
                     Spacer(
                       flex: 1,
                     ),
-                    Text('+91 8604949240',style: TextStyle(fontSize: 19,
-                        fontWeight: FontWeight.w500),),
+                    Text(
+                      '+91 8604949240',
+                      style:
+                          TextStyle(fontSize: 19, fontWeight: FontWeight.w500),
+                    ),
                     Spacer(
                       flex: 3,
                     ),
                   ],
                 ),
               ),
-
               SizedBox(
                 height: 20,
               ),
@@ -111,72 +115,63 @@ class Contact_Page extends StatelessWidget {
                 decoration: BoxDecoration(
                     color: Colors.white,
                     borderRadius: BorderRadius.circular(10),
-                    border: Border.all(
-                        color: Colors.blue.shade200,
-                        width: 1.5
-                    )
-                ),
+                    border:
+                        Border.all(color: Colors.blue.shade200, width: 1.5)),
                 child: Row(
-
                   children: [
                     Spacer(
                       flex: 1,
                     ),
-                    Icon(Icons.mail_outline,size: 35,color: Colors.blue,),
+                    Icon(
+                      Icons.mail_outline,
+                      size: 35,
+                      color: Colors.blue,
+                    ),
                     Spacer(
                       flex: 1,
                     ),
-                    Text('maayush235@gmail.com',style: TextStyle(fontSize: 19,
-                        fontWeight: FontWeight.w500),),
+                    Text(
+                      'maayush235@gmail.com',
+                      style:
+                          TextStyle(fontSize: 19, fontWeight: FontWeight.w500),
+                    ),
                     Spacer(
                       flex: 1,
                     ),
                   ],
                 ),
               ),
-
               SizedBox(
                 height: 20,
               ),
-
-
-
-
-
               Container(
                 height: 280,
                 width: 400,
                 decoration: BoxDecoration(
-                    color: Colors.white,
-                    borderRadius: BorderRadius.circular(10),
-                    border: Border.all(
-                        color: Colors.blue.shade200,
-                        width: 1.5
-                    ),
+                  color: Colors.white,
+                  borderRadius: BorderRadius.circular(10),
+                  border: Border.all(color: Colors.blue.shade200, width: 1.5),
                 ),
                 child: Column(
                   children: [
-
                     Padding(
                       padding: const EdgeInsets.all(15.0),
-                      child: Text('Social Media',style: TextStyle(
-                        color: Colors.blue,
-                        fontSize: 24,
-                        fontWeight: FontWeight.w800
-                      ),),
+                      child: Text(
+                        'Social Media',
+                        style: TextStyle(
+                            color: Colors.blue,
+                            fontSize: 24,
+                            fontWeight: FontWeight.w800),
+                      ),
                     ),
-
                     Divider(
-                       color: Colors.blue.shade200,
+                      color: Colors.blue.shade200,
                     ),
-
                     SizedBox(
                       height: 10,
                     ),
-
                     Row(
                       children: [
-
                         SizedBox(
                           width: 30,
                         ),
@@ -188,21 +183,15 @@ class Contact_Page extends StatelessWidget {
                         SizedBox(
                           width: 32,
                         ),
-
-
-                        Text('Github',style: TextStyle(
-                          fontSize: 19,
-                          fontWeight: FontWeight.w500,
-                          letterSpacing: 1
-                        ),)
-
-
-
+                        Text(
+                          'Github',
+                          style: TextStyle(
+                              fontSize: 19,
+                              fontWeight: FontWeight.w500,
+                              letterSpacing: 1),
+                        )
                       ],
                     ),
-
-
-
                     Padding(
                       padding: const EdgeInsets.all(18.0),
                       child: Divider(
@@ -212,7 +201,6 @@ class Contact_Page extends StatelessWidget {
                     SizedBox(
                       height: 5,
                     ),
-
                     Row(
                       children: [
                         SizedBox(
@@ -223,26 +211,21 @@ class Contact_Page extends StatelessWidget {
                           width: 40,
                           child: Image.asset('assets/images/linkedinn.png'),
                         ),
-
                         SizedBox(
                           width: 30,
                         ),
-                        Text('linkedin',style: TextStyle(
-                            fontSize: 19,
-                            fontWeight: FontWeight.w500,
-                            letterSpacing: 1
-                        ),)
-
-
+                        Text(
+                          'linkedin',
+                          style: TextStyle(
+                              fontSize: 19,
+                              fontWeight: FontWeight.w500,
+                              letterSpacing: 1),
+                        )
                       ],
                     ),
-
                   ],
                 ),
-                
               ),
-
-
             ],
           ),
         ),
