@@ -1,3 +1,4 @@
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
 class Contact_Page extends StatelessWidget {
@@ -39,41 +40,49 @@ class Contact_Page extends StatelessWidget {
               SizedBox(
                 height: 20,
               ),
-              Container(
-                height: 65,
-                width: 400,
-                decoration: BoxDecoration(
-                    color: Colors.white,
-                    borderRadius: BorderRadius.circular(10),
-                    border:
-                        Border.all(color: Colors.blue.shade200, width: 1.5)),
-                child: Row(
-                  children: [
-                    Spacer(
-                      flex: 1,
-                    ),
-                    Icon(
-                      Icons.phone_android_outlined,
-                      size: 35,
-                      color: Colors.blue,
-                    ),
-                    Spacer(
-                      flex: 1,
-                    ),
-                    Text(
-                      '+91 8604949240',
-                      style:
-                          TextStyle(fontSize: 19, fontWeight: FontWeight.w500),
-                    ),
-                    Spacer(
-                      flex: 3,
-                    ),
-                  ],
+
+              GestureDetector(
+                onTap: () {
+
+                },
+                child: Container(
+                  height: 65,
+                  width: 400,
+                  decoration: BoxDecoration(
+                      color: Colors.white,
+                      borderRadius: BorderRadius.circular(10),
+                      border:
+                          Border.all(color: Colors.blue.shade200, width: 1.5)),
+                  child: Row(
+                    children: [
+                      Spacer(
+                        flex: 1,
+                      ),
+                      Icon(
+                        Icons.phone_android_outlined,
+                        size: 35,
+                        color: Colors.blue,
+                      ),
+                      Spacer(
+                        flex: 1,
+                      ),
+                      Text(
+                        '+91 8604949240',
+                        style:
+                            TextStyle(fontSize: 19, fontWeight: FontWeight.w500),
+                      ),
+                      Spacer(
+                        flex: 3,
+                      ),
+                    ],
+                  ),
                 ),
               ),
+
               SizedBox(
                 height: 20,
               ),
+
               Container(
                 height: 65,
                 width: 400,
@@ -106,9 +115,11 @@ class Contact_Page extends StatelessWidget {
                   ],
                 ),
               ),
+
               SizedBox(
                 height: 20,
               ),
+
               Container(
                 height: 65,
                 width: 400,
@@ -141,9 +152,11 @@ class Contact_Page extends StatelessWidget {
                   ],
                 ),
               ),
+
               SizedBox(
-                height: 20,
+                height: 40,
               ),
+
               Container(
                 height: 280,
                 width: 400,
