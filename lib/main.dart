@@ -1,5 +1,7 @@
 import 'package:advflutterch_1/screens/Counter_App_using_Provider/Provider/Counter_Provider.dart';
 import 'package:advflutterch_1/screens/Counter_App_using_Provider/Views/Counter_App/Counter_Screen.dart';
+import 'package:advflutterch_1/screens/Intro/Provider/Intro_Provider.dart';
+import 'package:advflutterch_1/screens/Intro/Views/Screens/home_Screen.dart';
 import 'package:advflutterch_1/screens/Intro/Views/Screens/intro1.dart';
 import 'package:advflutterch_1/screens/Stepper/Views/Stepper_1/Stepper_first.dart';
 import 'package:advflutterch_1/screens/Stepper/Views/Stepper_2/Stepper_second.dart';
@@ -17,6 +19,9 @@ void main() {
       ),
       ChangeNotifierProvider(
         create: (context) => ThemeProvider(),
+      ),
+      ChangeNotifierProvider(
+        create: (context) => IntroProvider(),
       )
     ],
     child: const MyApp(),
@@ -61,7 +66,7 @@ class MyApp extends StatelessWidget {
         '/stepper_second': (context) => const Stepper_second(),
         '/Counter': (context) => const CounterScreen(),
         '/ThemeProvider': (context) => const ThemeChange(),
-        '/Intro': (context) => const Intro1(),
+        '/Intro': (context) => Provider.of<IntroProvider>(context,listen: true).ischecked ? Home(): Intro1(),
       },
     );
   }
