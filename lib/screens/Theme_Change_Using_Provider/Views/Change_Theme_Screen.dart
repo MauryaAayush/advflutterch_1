@@ -42,7 +42,7 @@ class ThemeChange extends StatelessWidget {
             Row(
               children: [
                 Icon(
-                  Provider.of<ThemeProvider>(context, listen: true).isdark
+                  Provider.of<ThemeProvider>(context, listen: true).getThemeMode()
                       ? Icons.nightlight
                       : Icons.sunny,
                   color: Theme.of(context).colorScheme.primary,
@@ -52,7 +52,7 @@ class ThemeChange extends StatelessWidget {
                   width: 18,
                 ),
                 Text(
-                  Provider.of<ThemeProvider>(context, listen: true).isdark
+                  Provider.of<ThemeProvider>(context, listen: true).getThemeMode()
                       ? "Dark Mode"
                       : "Light Mode",
                   style: TextStyle(fontSize: 20, fontWeight: FontWeight.w600),
@@ -63,10 +63,13 @@ class ThemeChange extends StatelessWidget {
                 Switch(
                   inactiveThumbColor: Colors.white,
                   value:
-                      Provider.of<ThemeProvider>(context, listen: true).isdark,
+                      Provider.of<ThemeProvider>(context, listen: true).getThemeMode(),
                   onChanged: (value) {
-                    Provider.of<ThemeProvider>(context, listen: false)
-                        .themechange(value);
+                      
+                      Provider.of<ThemeProvider>(context,listen: false).setData(value);
+
+                    // Provider.of<ThemeProvider>(context, listen: false)
+                    //     .s(value);
                   },
                 ),
               ],

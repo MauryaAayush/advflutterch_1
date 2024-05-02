@@ -1,6 +1,7 @@
 import 'package:advflutterch_1/screens/Contact/Views/Contact_Screen/Contact_Screen.dart';
 import 'package:advflutterch_1/screens/Counter_App_using_Provider/Provider/Counter_Provider.dart';
 import 'package:advflutterch_1/screens/Counter_App_using_Provider/Views/Counter_App/Counter_Screen.dart';
+import 'package:advflutterch_1/screens/Gallery/Views/Gallery_Screen/Gallery_Screen.dart';
 import 'package:advflutterch_1/screens/Intro/Provider/Intro_Provider.dart';
 import 'package:advflutterch_1/screens/Intro/Views/Screens/home_Screen.dart';
 import 'package:advflutterch_1/screens/Intro/Views/Screens/intro1.dart';
@@ -60,7 +61,7 @@ class MyApp extends StatelessWidget {
                 )
       ),
       color: Theme.of(context).primaryColor,
-      initialRoute: '/Contact',
+      initialRoute: '/Gallery',
       routes: {
         '/': (context) => const Switch_Theme(),
         '/stepper_first': (context) => const Stepper_first(),
@@ -68,6 +69,7 @@ class MyApp extends StatelessWidget {
         '/Counter': (context) => const CounterScreen(),
         '/ThemeProvider': (context) => const ThemeChange(),
         '/Contact': (context) => const Contact_Page(),
+        '/Gallery': (context) => const Gallery_Screen(),
         '/Intro': (context) => Provider.of<IntroProvider>(context,listen: true).ischecked ? Home(): Intro1(),
       },
     );

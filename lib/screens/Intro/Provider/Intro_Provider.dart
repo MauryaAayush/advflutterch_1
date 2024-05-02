@@ -24,4 +24,8 @@ class IntroProvider extends ChangeNotifier {
   IntroProvider() {
     GetResponse();
   }
+
+
+
+
 }
