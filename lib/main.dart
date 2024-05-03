@@ -1,6 +1,7 @@
 import 'package:advflutterch_1/screens/Contact/Views/Contact_Screen/Contact_Screen.dart';
 import 'package:advflutterch_1/screens/Counter_App_using_Provider/Provider/Counter_Provider.dart';
 import 'package:advflutterch_1/screens/Counter_App_using_Provider/Views/Counter_App/Counter_Screen.dart';
+import 'package:advflutterch_1/screens/Gallery/Provider/Gallery_Provider.dart';
 import 'package:advflutterch_1/screens/Gallery/Views/Gallery_Screen/Gallery_Screen.dart';
 import 'package:advflutterch_1/screens/Intro/Provider/Intro_Provider.dart';
 import 'package:advflutterch_1/screens/Intro/Views/Screens/home_Screen.dart';
@@ -24,6 +25,9 @@ void main() {
       ),
       ChangeNotifierProvider(
         create: (context) => IntroProvider(),
+      ),
+      ChangeNotifierProvider(
+        create: (context) => GalleryProvider(),
       )
     ],
     child: const MyApp(),
@@ -38,28 +42,25 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'Practice',
       debugShowCheckedModeBanner: false,
-      themeMode: Provider.of<ThemeProvider>(context, listen: true).isdark ? ThemeMode.dark:ThemeMode.light,
+      themeMode: Provider.of<ThemeProvider>(context, listen: true).isdark
+          ? ThemeMode.dark
+          : ThemeMode.light,
       theme: ThemeData(
-        colorScheme: ColorScheme.light(
-          background: Colors.white,
-          primary: Colors.purple,
-          secondary: Colors.green,
-          tertiary: Colors.blue,
-          scrim: Colors.deepOrange,
-          surface: Colors.purple
-
-        )
-      ),
+          colorScheme: ColorScheme.light(
+              background: Colors.white,
+              primary: Colors.purple,
+              secondary: Colors.green,
+              tertiary: Colors.blue,
+              scrim: Colors.deepOrange,
+              surface: Colors.purple)),
       darkTheme: ThemeData(
-                colorScheme: ColorScheme.dark(
-                  background: Colors.black,
-                  primary: Colors.amber,
-                  secondary: Colors.blue,
-                  tertiary: Colors.pink,
-                  scrim: Colors.yellow,
-                  surface: Colors.amber
-                )
-      ),
+          colorScheme: ColorScheme.dark(
+              background: Colors.black,
+              primary: Colors.amber,
+              secondary: Colors.blue,
+              tertiary: Colors.pink,
+              scrim: Colors.yellow,
+              surface: Colors.amber)),
       color: Theme.of(context).primaryColor,
       initialRoute: '/Gallery',
       routes: {
@@ -70,7 +71,10 @@ class MyApp extends StatelessWidget {
         '/ThemeProvider': (context) => const ThemeChange(),
         '/Contact': (context) => const Contact_Page(),
         '/Gallery': (context) => const Gallery_Screen(),
-        '/Intro': (context) => Provider.of<IntroProvider>(context,listen: true).ischecked ? Home(): Intro1(),
+        '/Intro': (context) =>
+            Provider.of<IntroProvider>(context, listen: true).ischecked
+                ? Home()
+                : Intro1(),
       },
     );
   }

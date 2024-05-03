@@ -10,12 +10,12 @@ List Gallery = [
     'number' : 153,
   },
   {
-    'img' : 'assets/images/Gallery/Aayush.jpg',
+    'img' : 'assets/images/Gallery/1.jpg',
     'name' : 'Facebook',
     'number' : 123,
   },
   {
-    'img' : 'assets/images/Gallery/Aayush.jpg',
+    'img' : 'assets/images/Gallery/diwali 5.png',
     'name' : 'Whatsapp',
     'number' : 1053,
   },
@@ -25,12 +25,12 @@ List Gallery = [
     'number' : 853,
   },
   {
-    'img' : 'assets/images/Gallery/Aayush.jpg',
+    'img' : 'assets/images/Gallery/Insta.jpg',
     'name' : 'Instagram',
     'number' : 793,
   },
   {
-    'img' : 'assets/images/Gallery/Aayush.jpg',
+    'img' : 'assets/images/Gallery/Collage.jpg',
     'name' : 'Collage',
     'number' : 703,
   },

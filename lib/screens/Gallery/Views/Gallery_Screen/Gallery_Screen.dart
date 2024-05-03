@@ -1,8 +1,11 @@
+import 'package:advflutterch_1/screens/Gallery/Provider/Gallery_Provider.dart';
 import 'package:advflutterch_1/screens/Gallery/Views/Gallery_Screen/Components/Gallery_Components.dart';
+import 'package:advflutterch_1/screens/Gallery/Views/Hide_Screen/Hide_Screen.dart';
 import 'package:advflutterch_1/utils/Gallery_Image_List.dart';
-import 'package:flutter/cupertino.dart';
+
 import 'package:flutter/material.dart';
 
+import 'package:provider/provider.dart';
 
 class Gallery_Screen extends StatelessWidget {
   const Gallery_Screen({super.key});
@@ -16,10 +19,31 @@ class Gallery_Screen extends StatelessWidget {
           automaticallyImplyLeading: false,
           centerTitle: true,
           actions: [
-            Padding(
-              padding: const EdgeInsets.all(8.0),
-              child: Icon(Icons.more_vert),
-            )
+            PopupMenuButton<String>(
+                onSelected: (String value) async {
+                  if (value == 'Hide') {
+                    if (await Provider.of<GalleryProvider>(context,
+                            listen: false)
+                        .check_Fingure_Print()) {
+                      Navigator.of(context).push(MaterialPageRoute(
+                        builder: (context) => Hide_Screen(),
+                      ));
+                    }
+                    else{
+                      print('Failed to print');
+                    }
+                  }
+                },
+                itemBuilder: (context) => <PopupMenuEntry<String>>[
+                      PopupMenuItem(
+                        value: 'Hide',
+                        child: Text('Hide'),
+                      ),
+                      PopupMenuItem(
+                        value: 'Setting',
+                        child: Text('Setting'),
+                      ),
+                    ])
           ],
           leading: Icon(Icons.menu),
           title: Text(
@@ -40,14 +64,20 @@ class Gallery_Screen extends StatelessWidget {
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
                   Album(),
-                  Icon(
-                    Icons.search,
-                    size: 28,
+                  GestureDetector(
+                    onTap: () {
+                      Navigator.of(context).push(MaterialPageRoute(
+                        builder: (context) => Hide_Screen(),
+                      ));
+                    },
+                    child: Icon(
+                      Icons.search,
+                      size: 28,
+                    ),
                   )
                 ],
               ),
             ),
-            
             Expanded(
               child: GridView.builder(
                 gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
@@ -74,7 +104,7 @@ class Gallery_Screen extends StatelessWidget {
           width: 120,
           decoration: BoxDecoration(
               color: Colors.blue,
-              image: DecorationImage(image: AssetImage(img),fit: BoxFit.cover),
+              image: DecorationImage(image: AssetImage(img), fit: BoxFit.cover),
               borderRadius: BorderRadius.circular(15)),
         ),
         Text(name, style: TextStyle(fontSize: 18, fontWeight: FontWeight.w600)),
