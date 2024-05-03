@@ -13,13 +13,13 @@ Container Hide_Container(String img) {
 }
 
 
-Padding Header() {
+Padding Header(String head) {
   return Padding(
     padding: const EdgeInsets.all(15),
     child: Row(
       mainAxisAlignment: MainAxisAlignment.spaceBetween,
       children: [
-        Text('Today',
+        Text(head,
             style:
             TextStyle(fontSize: 21, fontWeight: FontWeight.w600)),
         Text('Select',

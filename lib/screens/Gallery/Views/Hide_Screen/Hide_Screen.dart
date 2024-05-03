@@ -28,7 +28,7 @@ class Hide_Screen extends StatelessWidget {
 
             // GridView.builder(gridDelegate: gridDelegate)
 
-            Header(),
+            Header('Today'),
             Expanded(
               child: GridView.builder(
                 gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
@@ -37,7 +37,7 @@ class Hide_Screen extends StatelessWidget {
                 itemCount: Hide.length,
               ),
             ),
-            Header(),
+            Header('Yesterday'),
             Expanded(
               child: GridView.builder(
                 gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
