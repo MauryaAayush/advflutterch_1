@@ -1,6 +1,8 @@
 import 'package:advflutterch_1/screens/Gallery/Views/Gallery_Screen/Components/Gallery_Components.dart';
+import 'package:advflutterch_1/utils/Gallery_Image_List.dart';
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter/rendering.dart';
+
 
 class Gallery_Screen extends StatelessWidget {
   const Gallery_Screen({super.key});
@@ -9,7 +11,6 @@ class Gallery_Screen extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-
       home: Scaffold(
         appBar: AppBar(
           automaticallyImplyLeading: false,
@@ -21,9 +22,11 @@ class Gallery_Screen extends StatelessWidget {
             )
           ],
           leading: Icon(Icons.menu),
-          title: Text('Gallery',style: TextStyle(fontSize: 25),),
+          title: Text(
+            'Gallery',
+            style: TextStyle(fontSize: 25),
+          ),
         ),
-
         body: Column(
           children: [
             Divider(
@@ -37,38 +40,49 @@ class Gallery_Screen extends StatelessWidget {
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
                   Album(),
-                  Icon(Icons.search,size: 28,)
+                  Icon(
+                    Icons.search,
+                    size: 28,
+                  )
                 ],
               ),
             ),
-
-            Column(
-              children: [
-                Container(
-                  height: 110,
-                  width: 120,
-                  decoration: BoxDecoration(
-                    color: Colors.tealAccent,
-                    borderRadius: BorderRadius.circular(15)
-                  ),
-                ),
-                Text('Camera',style: TextStyle(
-                  fontSize: 20,
-                  fontWeight: FontWeight.w700
-                )),
-                Text('1,551',style: TextStyle(
-                  color: Colors.grey,
-                  fontWeight: FontWeight.w600
-                ),),
-              ],
-            ),
             
-            // GridView.builder(gridDelegate: , itemBuilder: itemBuilder)
+            Expanded(
+              child: GridView.builder(
+                gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
+                    crossAxisCount: 3, childAspectRatio: 3 / 4),
+                itemBuilder: (context, index) => Gallery_Gride_Views(
+                  Gallery[index]['img'],
+                  Gallery[index]['name'],
+                  Gallery[index]['number'],
+                ),
+                itemCount: Gallery.length,
+              ),
+            ),
           ],
         ),
       ),
     );
   }
 
-
+  Column Gallery_Gride_Views(String img, String name, int number) {
+    return Column(
+      children: [
+        Container(
+          height: 110,
+          width: 120,
+          decoration: BoxDecoration(
+              color: Colors.blue,
+              image: DecorationImage(image: AssetImage(img),fit: BoxFit.cover),
+              borderRadius: BorderRadius.circular(15)),
+        ),
+        Text(name, style: TextStyle(fontSize: 18, fontWeight: FontWeight.w600)),
+        Text(
+          '$number',
+          style: TextStyle(color: Colors.grey, fontWeight: FontWeight.w600),
+        ),
+      ],
+    );
+  }
 }
