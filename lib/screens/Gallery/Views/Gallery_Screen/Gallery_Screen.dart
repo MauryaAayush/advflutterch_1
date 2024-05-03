@@ -100,8 +100,9 @@ class Gallery_Screen extends StatelessWidget {
     return Column(
       children: [
         Container(
+          margin: EdgeInsets.all(5),
           height: 110,
-          width: 120,
+          width: 110,
           decoration: BoxDecoration(
               color: Colors.blue,
               image: DecorationImage(image: AssetImage(img), fit: BoxFit.cover),

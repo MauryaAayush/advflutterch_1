@@ -1,3 +1,5 @@
+import 'package:advflutterch_1/screens/Gallery/Views/Hide_Screen/Components/Hide_Screen_Components.dart';
+import 'package:advflutterch_1/utils/Hide_List.dart';
 import 'package:flutter/material.dart';
 
 class Hide_Screen extends StatelessWidget {
@@ -26,28 +28,32 @@ class Hide_Screen extends StatelessWidget {
 
             // GridView.builder(gridDelegate: gridDelegate)
 
-            Row(
-              children: [
-                Text('Today',
-                    style: TextStyle(fontSize: 25, fontWeight: FontWeight.w600))
-              ],
+            Header(),
+            Expanded(
+              child: GridView.builder(
+                gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
+                    crossAxisCount: 5),
+                itemBuilder: (context, index) => Hide_Container(Hide[index]),
+                itemCount: Hide.length,
+              ),
             ),
-            Row(
-              children: [
-                Container(
-                  height: 90,
-                  width: 85,
-                  decoration: BoxDecoration(
-                    color: Colors.grey,
-                    borderRadius: BorderRadius.circular(20)
-                  ),
-                ),
-
-              ],
-            )
+            Header(),
+            Expanded(
+              child: GridView.builder(
+                gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
+                    crossAxisCount: 5),
+                itemBuilder: (context, index) => Hide_Container(Hide1[index]),
+                itemCount: Hide1.length,
+              ),
+            ),
           ],
         ),
       ),
     );
   }
+
+
+
+
+
 }
