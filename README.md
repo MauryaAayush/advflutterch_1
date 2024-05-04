@@ -1,7 +1,6 @@
    #
    <h1 align = "center">📖 AvdFlutterCh_1 📖</h1>
 
-
    ##  
   <h2 align = "center">Lecture-1 -> Switch Theme </h2>
 
