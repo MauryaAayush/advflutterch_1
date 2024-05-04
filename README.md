@@ -10,6 +10,10 @@
 <img src = "https://github.com/MauryaAayush/advflutterch_1/assets/143180849/e23fdcf0-46f3-4134-af0f-7b68d3ee8409" height = 500px>
 </div>
 
+<div align="center">
+    <a href="https://github.com/MauryaAayush/advflutterch_1/tree/master/lib/screens/first_page/Views/Switch_theme_Screen">👉 📚 Go to dart file 📚 👈</a>
+</div>
+
 ##
 <h2 align = "center">Topic-2 -> Steppers - 1 </h2>
 
@@ -31,13 +35,12 @@
 <img src = "https://github.com/MauryaAayush/advflutterch_1/assets/143180849/b08a6a96-4bc6-4e9f-bd97-92045c532146" height = 500px>
 </div>
 
------------------------------------------------------------
-             1.3 Provider  (Flow chart)
-------------------------------------------------------------
+##
+ <h2 align = "center"> Topic-3 -> 1.3 Provider  (Flow chart) </h2>
 
-
+<div align="center">
 <img src = "https://github.com/MauryaAayush/advflutterch_1/assets/143180849/3dd4c142-aaa7-48a2-8680-a68d129452bd" height = 500px>
-
+</div>
 
 -----------------------------------------------------------
              1.4.1 Counter using Provider
